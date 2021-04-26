@@ -15,7 +15,7 @@ class StateController_Summary: ObservableObject {
     private var numOfRounds: Int = 0
     private var numOfPlayers: Int = 0
     
-    var sheets: [Sheet] = [] //FIXME:
+    private var sheets: [Sheet] = []
     
     private var countdownTimePublisher: TimePublisher =  { TimePublisher(every: 1) }()
     
@@ -81,10 +81,10 @@ extension StateController_Summary {
         Logger.runCycle.debug("\(type(of: self)): \(#function): Sheet: number = \(sheet.getNumber()), Author: nickname = \(sheet.getAuthor().getNickname()) (\(sheet.getAuthor().getNumber()))")
         
         self.sheets.append(sheet)
-        //self.sheetStacks = self.buildSheetStacks()
+        self.sheetStacks = self.buildSheetStacks() //FIXME:
     }
     
-    func buildSheetStacks() -> [[Sheet]] { //FIXME:
+    func buildSheetStacks() -> [[Sheet]] {
         
         var sheetStacks = [[Sheet]]()
         
@@ -101,7 +101,6 @@ extension StateController_Summary {
             }
             sheetStacks.append(sheetStack)            
         }
-        //self.sheetStacks = sheetStacks //FIXME:
         
         return sheetStacks
     }

@@ -27,7 +27,6 @@ struct SubRootView_Summary: View {
                 SummaryView(sheetStacks: stateController.getSheetStacks(),
                             topic: stateController.getTopic(),
                             backHomeAction: stateController.backtoHome)
-                    //.onChange(of: stateController.sheets, perform: {_ in stateController.buildSheetStacks()}) //FIXME: 
             }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
