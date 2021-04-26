@@ -50,6 +50,7 @@
 		B40A58D5262DDF000034A1F2 /* SubRootView_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A58BF262DDF000034A1F2 /* SubRootView_Home.swift */; };
 		B40A58D6262DDF000034A1F2 /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A58C0262DDF000034A1F2 /* DoneView.swift */; };
 		B40A58D7262DDF000034A1F2 /* Extensions_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A58C1262DDF000034A1F2 /* Extensions_View.swift */; };
+		B49D1C3D263707FB005DB809 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B49D1C3C263707FB005DB809 /* README.md */; };
 		FA477B1C7248190ED9D58FA3 /* Pods_sCatCh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E50C54503402CBE44031E0 /* Pods_sCatCh.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		B40A58BF262DDF000034A1F2 /* SubRootView_Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubRootView_Home.swift; sourceTree = "<group>"; };
 		B40A58C0262DDF000034A1F2 /* DoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
 		B40A58C1262DDF000034A1F2 /* Extensions_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_View.swift; sourceTree = "<group>"; };
+		B49D1C3C263707FB005DB809 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B7E50C54503402CBE44031E0 /* Pods_sCatCh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sCatCh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FB9EB0305E3479B181D23A /* Pods-sCatCh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sCatCh.release.xcconfig"; path = "Target Support Files/Pods-sCatCh/Pods-sCatCh.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 		B40A5865262DC7A00034A1F2 /* sCatCh */ = {
 			isa = PBXGroup;
 			children = (
+				B49D1C3C263707FB005DB809 /* README.md */,
 				B40A589F262DDEDF0034A1F2 /* View */,
 				B40A589E262DDED70034A1F2 /* Storage */,
 				B40A588D262DDE830034A1F2 /* State */,
@@ -303,6 +306,7 @@
 			files = (
 				B40A586E262DC7A00034A1F2 /* Preview Assets.xcassets in Resources */,
 				B40A586B262DC7A00034A1F2 /* Assets.xcassets in Resources */,
+				B49D1C3D263707FB005DB809 /* README.md in Resources */,
 				B40A5876262DD8950034A1F2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

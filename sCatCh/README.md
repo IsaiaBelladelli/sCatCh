@@ -1,3 +1,3 @@
 # sCatCh
 
-SCatCh is a drawing-guessing game
+SCatCh is a funny drawing-guessing game.
