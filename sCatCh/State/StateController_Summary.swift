@@ -81,7 +81,7 @@ extension StateController_Summary {
         Logger.runCycle.debug("\(type(of: self)): \(#function): Sheet: number = \(sheet.getNumber()), Author: nickname = \(sheet.getAuthor().getNickname()) (\(sheet.getAuthor().getNumber()))")
         
         self.sheets.append(sheet)
-        self.sheetStacks = self.buildSheetStacks() //FIXME:
+        self.sheetStacks = self.buildSheetStacks() //FIXME: bad memory access
     }
     
     func buildSheetStacks() -> [[Sheet]] {
