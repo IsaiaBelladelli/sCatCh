@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VariablesViewState
    version = "1.0">
-   <ContextStates>
-      <ContextState
-         contextName = "closure #1 in SubRootView_Summary.body.getter:SubRootView_Summary.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "stateController">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-   </ContextStates>
 </VariablesViewState>

@@ -15,7 +15,7 @@ struct SheetView: View {
     
     init(timeRemaining: Int, topic: String, interactView: AnyView, currentRoundNum: Int, totalRoundNum: Int,
          doneAction: @escaping ()->(), forceEndingAction: ( ()->() )! ) {
-        self.isDone = false
+        self._isDone = State(initialValue: false)
         self.timeRemaining = timeRemaining
         self.topic = topic
         self.interactView = interactView

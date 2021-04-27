@@ -10,7 +10,7 @@ struct SummaryView: View {
     private let backHomeAction: () -> ()
     
     init(sheetStacks: [[Sheet]], topic: String, backHomeAction: @escaping () -> ()) {
-        self.stackIndex = 0
+        self._stackIndex = State(initialValue: 0)
         self.sheetStacks = sheetStacks
         self.topic = topic
         self.backHomeAction = backHomeAction
@@ -42,11 +42,11 @@ struct SummaryView: View {
             
             if self.sheetStacks.count > 0 {
                 List{
-                    
-                    ForEach(self.sheetStacks[stackIndex], id:\.id) {sheet in
-                        
+
+                    ForEach(self.sheetStacks[stackIndex], id:\.id) {sheet in 
+
                         HStack{
-                            
+
                             Text("\(sheet.getNumber())")
                                 .font(.title2)
                                 .overlay( Circle()
@@ -55,14 +55,14 @@ struct SummaryView: View {
                                 )
                                 .padding(.horizontal, 5)
                                 .frame(width: circleFrameSize+10)
-                            
+
                             VStack{
-                                
+
                                 self.createSheetContentView(sheet: sheet)
-                                
+
                                 HStack{
                                     Spacer()
-                                    
+
                                     Text("by: \(sheet.getAuthor().getNickname())")
                                         .font(.caption)
                                 }
@@ -73,10 +73,10 @@ struct SummaryView: View {
                 }
                 .gesture(DragGesture(minimumDistance: 50, coordinateSpace: .global)
                             .onEnded({ value in self.updateStackIndex(value: value)} ))
-                
+
             } else {
                 Spacer()
-                
+
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.black))
                     .scaleEffect(2)

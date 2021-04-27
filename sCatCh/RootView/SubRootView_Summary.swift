@@ -21,9 +21,8 @@ struct SubRootView_Summary: View {
             case .GetReady:
                 GetReadyView(messagge: stateController.getGetReadyMessage(),
                              timeRemaining: stateController.getTimeRemaining(),
-                             showCountdown: true)                
-            
-            case .Summary:
+                             showCountdown: true)
+            case .Summary:                
                 SummaryView(sheetStacks: stateController.getSheetStacks(),
                             topic: stateController.getTopic(),
                             backHomeAction: stateController.backtoHome)
